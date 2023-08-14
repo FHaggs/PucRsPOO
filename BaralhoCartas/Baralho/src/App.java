@@ -1,5 +1,15 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        
+        Baralho b = new Baralho();
+
+        b.retirarCima();
+
+        Carta cartas[] = b.getCartas();
+
+        for(int i=0;i<cartas.length;i++){
+            System.out.println(cartas[i]);
+        }
+
     }
 }
